@@ -1,0 +1,29 @@
+{
+  "name": "angular_sensu",
+  "version": "1.0.0",
+  "description": "Curso de AngularJS y Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alce65/Angular_Sensu.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Bootstrap",
+    "Curso"
+  ],
+  "author": "Alejandro Cerezo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alce65/Angular_Sensu/issues"
+  },
+  "homepage": "https://github.com/alce65/Angular_Sensu#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
