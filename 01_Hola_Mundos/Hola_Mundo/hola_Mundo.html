@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hola Mundo</title>
+        <meta name="description" content="Hola Mundo con Angula JS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <script src="./js/angular.js"></script>
+    </head>
+
+    <body ng-app ng-init="sTitulo = 'Curso de Angular JS y Bootstrap'; sAutor = 'Alejandro Cerezo' ">
+        <div class="container">
+            <header class="jumbotron">
+               <h1>{{sTitulo}}</h1> 
+            </header>
+            <article>
+                <form>
+                    <p>
+                        <label for="inputNombre">Escribe tu nombre</label>
+                        <input id="inputNombre" type="text" ng-model="inputNombre">
+                    </p>
+                    <p>
+                        <button ng-click=" inputNombre = '' ">Borrar</button>
+                    </p>
+                </form>
+                <p>
+                    Hola {{inputNombre || 'Mundo'}}
+                </p>
+            </article>   
+            <footer>
+                <p class="well">{{sAutor}} - 2017</p>
+            </footer>        
+        </div>
+    </body>
+
+</html>

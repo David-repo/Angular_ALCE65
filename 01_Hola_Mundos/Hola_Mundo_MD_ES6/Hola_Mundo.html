@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hola Mundo</title>
+        <meta name="description" content="Hola Mundo con Angula JS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <script src="./lib/angular.js"></script>
+        <script src="./js/appModule.js"></script>
+        <script src="./js/appController.js"></script>
+    </head>
+
+    <body ng-app="appMain" ng-controller="AppController as $ctrl">
+        <div class="container">
+            <header class="jumbotron">
+               <h1>{{$ctrl.sTitulo}}</h1> 
+            </header>
+            <article>
+                <form>
+                    <p>
+                        <label for="inputNombre">Escribe tu nombre</label>
+                        <input id="inputNombre" type="text" ng-model="$ctrl.inputNombre">
+                    </p>
+                    <p>
+                        <button ng-click="$ctrl.borrar()">Borrar</button>
+                    </p>
+                </form>
+                <p>
+                    Hola {{$ctrl.inputNombre || 'Mundo'}}
+                </p>
+            </article>   
+            <footer>
+                <p class="well">{{$ctrl.sAutor}} - 2017</p>
+            </footer>        
+        </div>
+    </body>
+
+</html>
