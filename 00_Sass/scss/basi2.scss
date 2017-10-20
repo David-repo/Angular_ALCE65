@@ -1,0 +1,40 @@
+body {
+    box-sizing: border-box;
+}
+
+article {
+    div {
+        width: 80%;
+    }
+}
+
+footer {
+    >div {
+        width: 90%;
+    }
+}
+
+.selectorA {
+    color: maroon;
+    font-size: 3em;
+}
+
+@mixin mixin1 {
+    color: maroon;
+    font-size: 3em;
+}
+
+.selectorB {
+    @extend .selectorA;
+    text-decoration: underline;
+}
+
+.selectorC {
+    @include mixin1;
+    border: 1px solid palegreen;
+}
+
+.selectorD {
+    @include mixin1;
+    margin: 2em;
+}

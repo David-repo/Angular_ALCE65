@@ -1,0 +1,9 @@
+$fuente: 'Arial' ;
+$color: blue;
+$size: 4em;
+
+h1 {
+    font-family: $fuente;
+    font-size: $size/2;
+    color: $color/2;
+}

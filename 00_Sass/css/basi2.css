@@ -1,0 +1,27 @@
+body {
+  box-sizing: border-box; }
+
+article div {
+  width: 80%; }
+
+footer > div {
+  width: 90%; }
+
+.selectorA, .selectorB {
+  color: maroon;
+  font-size: 3em; }
+
+.selectorB {
+  text-decoration: underline; }
+
+.selectorC {
+  color: maroon;
+  font-size: 3em;
+  border: 1px solid palegreen; }
+
+.selectorD {
+  color: maroon;
+  font-size: 3em;
+  margin: 2em; }
+
+/*# sourceMappingURL=basi2.css.map */

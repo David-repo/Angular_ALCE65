@@ -1,0 +1,9 @@
+.bordeado {
+    border: 1px solid black;
+}
+
+@media (min-width: 992px) { 
+    .container {
+        background-color: papayawhip;
+    }  
+}
