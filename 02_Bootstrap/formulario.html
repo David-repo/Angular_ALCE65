@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">     
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>        
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form role="form">
+                    <div class="form-group">
+                        <label>ID</label>
+                        <p class="form-control-static">12</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="username">Nombre de usuario</label>
+                        <input id="username" type="text" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" class="form-control">
+                    </div>
+        
+                    <span class="clearfix"></span>
+        
+                    <div class="form-group">
+                        <label for="passwd">Contraseña</label>
+                        <input id="passwd" type="password" class="form-control">      
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="detalle">Detalle</label>
+                        <textarea id="detalle" class="form-control" rows="10"></textarea>
+                    </div>
+        
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox" id="item-a" value="a"> Opción A
+                        </label>              
+                    </div>   
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox" id="item-b" value="b"> Opción B
+                        </label>              
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox" id="item-c" value="c"> Opción C
+                        </label>
+                    </div>
+                    
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="opcionNumero" id="opcionPrimera" value="1" checked>
+                        Opción primera
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="opcionNumero" id="opcionSegunda" value="2">
+                        Opción segunda
+                        </label>
+                    </div>
+        
+                    <select class="form-control">
+                        <option>Rojo</option>
+                        <option>Amarillo</option>
+                        <option>Azul</option>
+                        <option>Verde</option>
+                        <option>Violeta</option>
+                    </select>
+                    
+                    <span class="clearfix"></span>
+
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                </form>
+            </div>
+            <div class="col">
+                <p>Ejemplo de formulario en Bootstrap</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
